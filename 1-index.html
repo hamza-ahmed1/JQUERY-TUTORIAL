@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2 id="chennalname">Wellcome to Coding Hub</h2>
+    <h3 class="description">Learning  | Projects | Tutorials</h3>
+    <p>Hamza Ahmed Khan</p>
+
+        <input type="button" value="click" id="btn">
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>   
+    <script>
+        // $(document).ready(show())
+        // function show() {
+        //     alert("Wellcome to jquery");
+        // }
+        $(document).ready(function (){
+                $("#btn").click(function(){
+                    $("#chennalname").css("color","red");
+                    $(".description").css("color","green");
+                    $("p").css("font-size","35px");
+                });
+                    
+                
+        }
+            
+        );
+    </script>
+</body>
+</html>
