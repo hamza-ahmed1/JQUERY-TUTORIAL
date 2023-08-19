@@ -20,3 +20,14 @@ how to connect
    basic syntax: $(selector).Action()
 */
 
+
+/*
+ADVANCE SELECTOR
+   $("*") universal selector
+   $("ul li") selecting list item
+   $("class1,class2") selecting multiple classes
+   $("h1,div,p") select multiple elements
+   $(p:first) select first element amount all DOM
+   $(p:last) select last elemnent amoung all DOM
+*/
+

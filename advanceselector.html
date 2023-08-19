@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Selector</title>
+</head>
+<body>
+    
+<!-- Html code section -->
+<h1 id="heading1">This is heading 1</h1>
+<h2 id="heading2">This is heading 2</h2>
+  <p id="para1">This is para 1</p>
+  <p id="para2">This is para 2</p>
+  <input type="button" value="Change all element color" id="btn">
+  <br>
+  <ul id="list1">
+    <li>Pen</li>
+    <li>Erasor</li>
+    <li>Pencil</li>
+  </ul>
+  <input type="button" value="Change all list items color" id="listbtn">
+  <br>
+  <br>
+  <input type="button" value="Select First p Element" id="selectfirst">
+  <br>
+  <br>
+  <input type="button" value="Select last p Element" id="selectlast">
+  <ul id="list2">
+    <li>DSA</li>
+    <li>COAL</li>
+    <li>LA</li>
+    <li>Discreate</li>
+  </ul>
+  <br>
+  <br>
+  <input type="button" value="Select even" id="selecteven">
+  <br>
+  <br>
+  <input type="button" value="Select odd" id="selectodd">
+  <br>
+  <br>
+  <input type="button" value="Select first li" id="selectfirstli">
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>   
+    <script>
+        // universal selector
+        $(document).ready(function( ){
+         $("#btn").click(function(){
+            $("*").css("color","red");
+         });
+        });
+        // select list item
+
+        $(document).ready(function(){
+            $("#listbtn").click(function () {
+               $("#list1 li").css("font-size","2rem") 
+            });
+        });
+        // select first element amoung all p
+        $(document).ready(function(){
+            $("#selectfirst").click(function () {
+               $("p:first").css("font-style","italic") 
+            });
+        });
+           // select last element amoung all p
+        $(document).ready(function(){
+            $("#selectlast").click(function () {
+               $("p:last").css("font-style","italic") 
+            });
+        });
+        //select even 
+        $(document).ready(function(){
+            $("#selecteven").click(function () {
+               $("#list2 li:even").css("color","green") 
+            });
+        });
+        $(document).ready(function(){
+            $("#selectodd").click(function () {
+               $("#list2 li:odd").css("color","red") 
+            });
+        });
+        // select first li element amoung all li 
+        $(document).ready(function(){
+            $("#selectfirstli").click(function () {
+               $("#list2 li:first-child").css("font-size","3rem") 
+            });
+        });
+    </script>
+</body>
+</html>
