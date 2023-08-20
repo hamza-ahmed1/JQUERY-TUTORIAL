@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- html Section -->
+    <p id="text1"> <b>This </b>is some text</p>
+    <input type="text" name="text" id="name">
+    <input type="button" value="Show text" id="btn">
+    <!-- Script section  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>   
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+            // var text=$("#text1").text();  only text
+            //var text=$("#text1").html(); text + html
+           // var text=$("#name").val(); get value from form element
+                var text=$("#name").attr("type");
+
+            alert(text);
+        })
+    })
+    </script>
+</body>
+</html>

@@ -70,3 +70,11 @@ ADVANCE SELECTOR
     fadetoggle(time,callback) used to fadein and fadeout element
     fadeto(time,opacity,callback) used to fade element to given opacity
 */
+
+/*
+   TEXT(),VAL ,HTML,ATTR() FUNCTIONS
+   1-text() get text value from any tag
+   2-val() get text value from field 
+   3-html() get html value from any tag
+   4-attr("attribute name") get attribute value from any tag
+*/
