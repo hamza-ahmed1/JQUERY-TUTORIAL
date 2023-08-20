@@ -29,5 +29,9 @@ ADVANCE SELECTOR
    $("h1,div,p") select multiple elements
    $(p:first) select first element amount all DOM
    $(p:last) select last elemnent amoung all DOM
+   $(li:first-child) select first li amoung all
+   $(li:eq(2)) select li that == 2
+   $(li:gt(3)) select li that greater than 3
+   $(li:lt(3)) select li that less than 3
 */
 

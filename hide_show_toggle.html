@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Html Section -->
+    <h3 class="hidetext showtext toggletext">This is going to hide</h3>
+    <input type="button" value="hide" id="hide">
+    <input type="button" value="show" id="show">
+    <input type="button" value="toggle" id="toggle">
+    <!-- script section -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>  
+    <script>
+        // hide ,show ,and toggle method with out parameter
+        // $(document).ready(function () {
+        //     $("#hide").click(function () {
+        //         $(".hidetext").hide();
+        //     })
+        //     $("#show").click(function () {
+        //         $(".showtext").show();
+        //     })
+        //     $("#toggle").click(function () {
+        //         $(".toggletext").toggle();
+        //     })
+
+        // })
+        //with parameter
+        // 1st para is speed ,"slow","fast" and in  miliseconds
+        // 2nd para is callback function we can call any function  in 2nd parameter
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                $(".hidetext").hide("slow");
+            })
+            $("#show").click(function () {
+                $(".showtext").show("fast");
+            })
+            $("#toggle").click(function () {
+                $(".toggletext").toggle(3000);
+            })
+
+        })
+    </script>
+</body>
+</html>
