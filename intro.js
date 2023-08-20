@@ -63,3 +63,10 @@ ADVANCE SELECTOR
    1-text() set text value to any tag
    2-val() get text value from field
 */
+
+/*
+    fadein(time,callback) used to fadein hidden element
+    fadeout(time,callback) used to fadeout hidden element
+    fadetoggle(time,callback) used to fadein and fadeout element
+    fadeto(time,opacity,callback) used to fade element to given opacity
+*/
