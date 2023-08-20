@@ -35,3 +35,24 @@ ADVANCE SELECTOR
    $(li:lt(3)) select li that less than 3
 */
 
+/*
+   HIDE ,SHOW , AND TOGGLE METHODS
+    1st para is speed ,"slow","fast" and in  miliseconds
+    2nd para is callback function we can call any function  in 2nd parameter
+*/
+
+/*
+      MOUSE EVENT
+      click() :on left click
+      contextmenu():on right click
+      dbclick():on double click
+      mouseenter():
+      mouseleave():
+      mousedown():when any of mouse key is pressed over the tag
+      mouseup():when any of mouse key is unpressed over the tag
+      focus(): focus on field
+      blur():leave focus from field 
+
+
+
+*/

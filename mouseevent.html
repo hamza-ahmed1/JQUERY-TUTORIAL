@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Html code -->
+    <h2 id="text">This is some text</h2>
+    <input type="button" value="click me" id="btn">
+    <label>Enter your name</label>
+    <br>
+    <input type="text" name="name" id="name">
+    <!-- Script code -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>   
+    <script>
+        $(document).ready(function () {
+            // $("#btn").contextmenu(function () {
+            //     $("#text").css("color","red")
+                    
+                
+            // })
+            //focus:
+            // $("#name").focus(function () {
+            //     $("#name").css("background-color","lightgray")
+            // })
+            // $("#name").blur(function () {
+            //     $("#name").css("background-color","white")
+            // })
+
+            //on
+            $("#name").on({
+                    focus:function(){
+                        $("#name").css("background-color","lightgray")
+                    },
+                    blur:function(){
+                        $("#name").css("background-color","white")
+                    }
+            });
+        });
+                
+
+           
+
+     
+    </script>
+</body>
+</html>
