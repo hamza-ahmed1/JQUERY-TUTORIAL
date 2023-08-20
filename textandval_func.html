@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Html code -->
+    <input type="text" name="text1" id="num1" />
+    <input type="text" name="text2" id="num2" />
+    <input type="button" value="add" id="addbtn" />
+    <label for="result" id="result"></label>
+
+    <select name="gender" id="gender">
+      <option value="-1">Select Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <input type="button" value="submit" id="btnsubmit">
+      <label for="mygender" id="mygender"></label>
+    </select>
+    <!-- Script Section-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#addbtn").click(function () {
+            var num1 =Number( $("#num1").val());
+            var num2 =Number( $("#num2").val());
+          $("#result").text("Sum is " +(num1+num2));
+        });
+        $("#btnsubmit").click(function () {
+          $("#mygender").text($("#gender").val());
+        })
+      });
+    </script>
+  </body>
+</html>

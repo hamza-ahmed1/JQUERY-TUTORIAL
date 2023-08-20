@@ -53,6 +53,13 @@ ADVANCE SELECTOR
       focus(): focus on field
       blur():leave focus from field 
 
+      on(): is used to apply multiple events at once
 
 
+
+*/
+/*
+   TEXT AND VAL FUNCTIONS
+   1-text() set text value to any tag
+   2-val() get text value from field
 */
