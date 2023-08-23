@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text"></p>
+    <input type="text" placeholder="Enter name" id="name">
+    <input type="button" value="Default" id="btn">
+    <h4>Which one you would like to choose</h4>
+    <input type="button" value="Google" id="google">
+    <input type="button" value="Microsoft Edge" id="edge">
+    <a href="www.xyz.com" title="" id="link"></a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>   
+
+    <script>
+        $(document).ready(function () {
+           // $("#text").text("This <b>is<b> some text");//out put:"This <b>is<b> some text"
+            $("#text").html("This <b>is</b> some text");
+            $("#btn").click(function () {
+                $("#name").val("Hamza Ahmed Khan");
+            })
+            $("#google").click(function () {
+                $("#link").attr({href:"http://www.google.com",
+                                   title:"Google",
+                                   text:"Google"}); 
+                                   $("#link").text("Google");
+                                   
+            })
+            $("#edge").click(function () {
+                $("#link").attr({href:"http://www.microsoftedge.com",
+                                   title:"edge",
+                                   text:"Edge"}); 
+                                   $("#link").text("Edge");
+                                   
+            })
+        })
+    </script>
+</body>
+</html>

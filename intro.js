@@ -72,9 +72,21 @@ ADVANCE SELECTOR
 */
 
 /*
+   GET VAL FUNCTIONS();
    TEXT(),VAL ,HTML,ATTR() FUNCTIONS
    1-text() get text value from any tag
    2-val() get text value from field 
    3-html() get html value from any tag
    4-attr("attribute name") get attribute value from any tag
+*/
+
+
+/*
+   SET VALUE FUNCTIONS;
+      TEXT(),VAL ,HTML,ATTR() FUNCTIONS
+   1-text() SET text value to any tag
+   2-val()  SET text value to field i-e text input 
+   3-html() SET html value to any tag
+   4-attr("attribute name") SET attribute value to any tag i-e <a>
+
 */
