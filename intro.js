@@ -90,3 +90,16 @@ ADVANCE SELECTOR
    4-attr("attribute name") SET attribute value to any tag i-e <a>
 
 */
+
+/* 
+   ADD ,REMOVE AND TOGGLE CLASS
+   1-addClass() add class to any tag
+   2-removeClass() remove class from any tag
+   3-toggleClass() toggle class from any tag
+*/
+
+/*
+   APPEND AND PREPEND 
+   1-append() append element to any tag
+   2-prepend() prepend element to any tag
+*/
