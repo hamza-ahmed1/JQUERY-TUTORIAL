@@ -109,3 +109,10 @@ ADVANCE SELECTOR
    1-before() insert element before any tag
    2-after() insert element after any tag
 */
+
+/*
+   Change(),Submit(),Select()
+   1-change() on change event : when we change item from drop down menu
+   2-submit() on submit event :when we submit the form :but here we have to set event parameter and call event.prevent
+   3-select() on select event : when we select text from text field
+*/
