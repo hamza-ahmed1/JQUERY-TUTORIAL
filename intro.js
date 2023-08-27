@@ -103,3 +103,9 @@ ADVANCE SELECTOR
    1-append() append element to any tag
    2-prepend() prepend element to any tag
 */
+
+/*
+   BEFORE AND AFTER 
+   1-before() insert element before any tag
+   2-after() insert element after any tag
+*/
